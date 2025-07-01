@@ -16,6 +16,10 @@ a:hover {
   color: #b66d00;
 }
 
+h1 {
+  font-size: 48px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -38,4 +42,12 @@ ul.horizontal-list {
   gap: 1rem;
   padding: 0;
   list-style: none;
+}
+
+.interactable-image {
+  transition: transform 0.3s ease;
+}
+
+.interactable-image:hover {
+  transform: scale(1.08); /* Slightly larger on hover */
 }
