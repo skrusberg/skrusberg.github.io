@@ -2,8 +2,40 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+@font-face {
+  font-family: 'Glina Script';
+  src: url('Glina Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: #633b00;
+}
+a:hover {
+  color: #b66d00;
+}
+
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  min-height: 100vh;        /* make body take full viewport height */
+  margin: 0;                /* remove default margin */
+
+  text-align: center;
+
+  background-color: #f1dbba;
+  color: #cc994d;
+  font-family: 'Glina Script', Verdana, sans-serif;
+}
+
+ul.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
 }
