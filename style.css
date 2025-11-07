@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('Roboto-Regular.ttf') format('truetype');
+  src: url('Roboto-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RobotoCondensed';
-  src: url('RobotoCondensed-Regular.ttf') format('truetype');
+  src: url('Roboto-Condensed.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,7 +35,7 @@ p {
   line-height: 1.6;
   max-width: 600px;
   margin: 1rem auto;
-  padding: 0 1rem;
+  padding: 0rem;
   font-family: 'RobotoCondensed', Verdana, sans-serif;
 }
 
@@ -92,10 +92,6 @@ nav a.active {
   font-weight: bold;
 }
 
-img {
-  padding-top: 2rem;
-}
-
 ul.horizontal-list {
   display: flex;
   flex-wrap: wrap;
@@ -111,4 +107,20 @@ ul.horizontal-list {
 
 .interactable-image:hover {
   transform: scale(1.08); /* Slightly larger on hover */
+}
+
+/* Fixed bottom-right image that follows scroll */
+.fixed-bottom-right {
+  position: fixed;
+  bottom: -20px;
+  right: 4rem;
+  z-index: 999;
+  max-width: 150px;
+  max-height: 150px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.fixed-bottom-right:hover {
+  opacity: 1;
 }
